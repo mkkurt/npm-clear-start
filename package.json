@@ -1,0 +1,57 @@
+{
+  "name": "npm-clear-start",
+  "publisher": "mkkurt",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "displayName": "npm-clear-start",
+  "description": "Run both commands with one click of a button.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "noderunaddon.runStartCommand",
+        "title": "Run npm-start Command in Terminal"
+      },
+      {
+        "command": "noderunaddon.clearAndRunStartCommand",
+        "title": "Clear Terminal and Run npm-start Command in Terminal"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "noderunaddon.runStartCommand",
+        "key": "ctrl+shift+enter"
+      },
+      {
+        "command": "noderunaddon.clearAndRunStartCommand",
+        "key": "ctrl+shift+alt+enter"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
