@@ -21,21 +21,21 @@
   "contributes": {
     "commands": [
       {
-        "command": "noderunaddon.runStartCommand",
+        "command": "npm-clear-start.runStartCommand",
         "title": "Run npm-start Command in Terminal"
       },
       {
-        "command": "noderunaddon.clearAndRunStartCommand",
+        "command": "npm-clear-start.clearAndRunStartCommand",
         "title": "Clear Terminal and Run npm-start Command in Terminal"
       }
     ],
     "keybindings": [
       {
-        "command": "noderunaddon.runStartCommand",
+        "command": "npm-clear-start.runStartCommand",
         "key": "ctrl+shift+enter"
       },
       {
-        "command": "noderunaddon.clearAndRunStartCommand",
+        "command": "npm-clear-start.clearAndRunStartCommand",
         "key": "ctrl+shift+alt+enter"
       }
     ]

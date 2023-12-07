@@ -18,7 +18,7 @@ function activate(context) {
     100
   );
   startButton.text = "$(play) Run Start";
-  startButton.command = "noderunaddon.runStartCommand";
+  startButton.command = "npm-clear-start.runStartCommand";
   startButton.show();
 
   const clearAndStartButton = vscode.window.createStatusBarItem(
@@ -26,12 +26,12 @@ function activate(context) {
     99
   );
   clearAndStartButton.text = "$(play) Clear and Run Start";
-  clearAndStartButton.command = "noderunaddon.clearAndRunStartCommand";
+  clearAndStartButton.command = "npm-clear-start.clearAndRunStartCommand";
   clearAndStartButton.show();
 
   // Register the command to run the start script
   let runStartDisposable = vscode.commands.registerCommand(
-    "noderunaddon.runStartCommand",
+    "npm-clear-start.runStartCommand",
     () => {
       console.log("Run npm start");
       terminal.sendText("npm start");
@@ -40,7 +40,7 @@ function activate(context) {
 
   // Register the command to run the second-latest command
   let runClearAndStartDisposable = vscode.commands.registerCommand(
-    "noderunaddon.clearAndRunStartCommand",
+    "npm-clear-start.clearAndRunStartCommand",
     () => {
       console.log("Clear terminal (clear) and run npm start");
       terminal.sendText("clear");

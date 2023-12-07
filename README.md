@@ -10,10 +10,10 @@ One button runs only the npm start command, the other button clears the terminal
 
 ## Extension Settings
 
-    "command": "noderunaddon.runStartCommand",
+    "command": "npm-clear-start.runStartCommand",
     "key": "ctrl+shift+enter"
 
-    "command": "noderunaddon.clearAndRunStartCommand",
+    "command": "npm-clear-start.clearAndRunStartCommand",
     "key": "ctrl+shift+alt+enter"
 
 **Enjoy!**
